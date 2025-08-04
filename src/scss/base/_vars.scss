@@ -1,23 +1,16 @@
 :root {
-	--container-width: 1200px;
+	--container-width: 1443px;
 	--container-padding: 15px;
 
-	--font-main: sans-serif;
-	--font-accent: 'Manrope', sans-serif;
+	--font-main: 'Arial', sans-serif;
+	--font-accent: 'Inter', sans-serif;
 	--font-titles: var(--font-accent);
 
 	--page-bg: #fff;
-	--text-color: #000;
-	--accent: #ac182c;
-	--link-color: #2578c8;
-
-
-    --laptop-size: 1199px;
-	--tablet-size: 959px;
-	--mobile-size: 599px;
-}
-
-.dark {
-    --page-bg: #252526;
-    --text-color: #fff;
+	--color-secondary: #673a44;
+	--color-small: #000;
+	--color-big: #25090f;
+	--text-color: #575757;
+	--accent: #843546;
+	--link-color: #fff;
 }

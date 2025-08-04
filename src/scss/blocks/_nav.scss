@@ -1,11 +1,11 @@
-.header__nav {
-}
-.nav {
-	font-size: 18px;
-}
-.nav__list {
+.header__nav-items {
 	display: flex;
-	column-gap: 30px;
+	gap: 41px;
 }
-.active {
+
+.header__nav-link {
+	transition: opacity 0.2s ease-in;
+	&:hover {
+		opacity: 0.5;
+	}
 }
