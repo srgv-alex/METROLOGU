@@ -29,15 +29,21 @@
         <div class="header-wrapper">
             <div class="header-content">
                 <div class="header__title">
-                    <h1 class="h1">Кабинет метролога</h1>
+                    <h1 class="h1 header-title">Кабинет метролога</h1>
                 </div>
-                <p class="header-content__text">
-                    Онлайн-сервис для сопровождения деятельности метрологических <br> лабораторий
-                </p>
-                <button class="btn">Попробовать бесплатно</button>
+                <div>
+                    <p class="header-content__text">
+                        Онлайн-сервис для сопровождения деятельности метрологических <br> лабораторий
+                    </p>
+                </div>
+                <button class="btn header-btn">Попробовать бесплатно</button>
             </div>
             <div class="header__img">
-                <img src="./../../img/header/registration.png" alt="картинка регистрации">
+                <picture>
+                    <source srcset='./../../img/header/registration-tablet.png' media='(max-width: 768px)'>
+                    <source srcset='./../../img/header/registration-mob.png' media='(max-width: 375px)'>
+                    <img src="./../../img/header/registration.png" alt="картинка регистрации">
+                </picture>
             </div>
         </div>
     </div>
@@ -46,7 +52,7 @@
             <div class="header-row__items">
                 <div class="header-row__item">
                     <div class="header-row__item-row">
-                        <h3 class="h3">Главному метрологу</h3>
+                        <h3 class="h3 header__subtitle">Главному метрологу</h3>
                         <a href="#!">
                             <img src="./../../img/header/arrow.svg" alt="icon">
                         </a>
@@ -58,7 +64,7 @@
                 </div>
                 <div class="header-row__item">
                     <div class="header-row__item-row">
-                        <h3 class="h3">Метрологической службе</h3>
+                        <h3 class="h3 header__subtitle">Метрологической службе</h3>
                         <a href="#!">
                             <img src="./../../img/header/arrow.svg" alt="icon">
                         </a>

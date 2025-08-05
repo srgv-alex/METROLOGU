@@ -39,6 +39,21 @@
 	gap: 268px;
 	align-items: center;
 	padding-block: 53px;
+	@include m1024() {
+		gap: 80px;
+	}
+	@include m768() {
+		gap: unset;
+		padding-block: 67px 55px;
+	}
+	@media (max-width: 720px) {
+		flex-direction: column-reverse;
+		gap: 25px;
+	}
+	@include m425() {
+		padding-block: 34px 42px;
+	}
+
 	&::after {
 		position: absolute;
 		content: '';
@@ -48,27 +63,98 @@
 		height: 220px;
 		background-image: url(./../../img/header/decor.png);
 		background-repeat: no-repeat;
+		@include m1280() {
+			display: none;
+		}
 	}
 }
+
 .header-content {
 	padding-top: 37px;
 	max-width: 502px;
+	@media (max-width: 720px) {
+		text-align: center;
+	}
+	@include m425() {
+		padding-top: 0px;
+	}
+}
+
+.header__img {
+	@include m768() {
+		flex-shrink: 0;
+	}
 }
 .header__title {
 	margin-bottom: 26px;
+	@include m768() {
+		margin-bottom: 28px;
+	}
+	@include m425() {
+		margin-bottom: 15px;
+	}
+}
+
+.header__subtitle {
+	@include m1024() {
+		font-size: 24px;
+	}
+	@include m425() {
+		font-size: 21px;
+	}
+}
+
+.header-title {
+	@include m425() {
+		font-size: 36px;
+	}
+	@include m360() {
+		font-size: 30px;
+	}
 }
 
 .header-content__text {
 	line-height: 1.5;
 	color: #000;
 	margin-bottom: 53px;
+	@include m768() {
+		font-size: 21px;
+		line-height: 1.42;
+		margin-bottom: 38px;
+	}
+	@include m425() {
+		font-size: 14px;
+		line-height: 1.5;
+		margin-bottom: 30px;
+	}
+}
+
+.header-btn {
+	@include m1024() {
+		padding: 22px 40px;
+	}
+	@include m768() {
+		padding: 19px 56px;
+		font-size: 16px;
+	}
+	@include m360() {
+		font-size: 14px;
+	}
 }
 
 .header-row__items {
 	display: flex;
 	gap: 20px;
+	@include m768() {
+		gap: 30px;
+	}
+	@media (max-width: 720px) {
+		flex-direction: column;
+		gap: 20px;
+	}
 }
 .header-row__item {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
@@ -76,6 +162,27 @@
 	max-width: 697px;
 	box-shadow: 0 0 50px 0 #f2f2f2;
 	border-radius: 25px;
+
+	@include m1024() {
+		gap: 25px;
+	}
+	@include m768() {
+		padding: 30px 40px 40px;
+		max-width: 330px;
+	}
+	@media (max-width: 720px) {
+		max-width: unset;
+		width: 100%;
+	}
+	@include m425() {
+		padding: 20px;
+		gap: 10px;
+		a {
+			position: absolute;
+			top: 36%;
+			right: 8%;
+		}
+	}
 }
 .header-row__item-row {
 	display: flex;
@@ -85,4 +192,13 @@
 
 .header-row__text {
 	line-height: 1.5;
+	@include m768() {
+		font-size: 16px;
+		line-height: 1.3125;
+	}
+	@include m425() {
+		max-width: 220px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
 }

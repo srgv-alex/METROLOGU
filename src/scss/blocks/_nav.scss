@@ -1,11 +1,17 @@
 .header__nav-items {
 	display: flex;
 	gap: 41px;
+	@include m425() {
+		gap: 15px;
+	}
 }
 
 .header__nav-link {
 	transition: opacity 0.2s ease-in;
 	&:hover {
 		opacity: 0.5;
+	}
+	@include m360() {
+		font-size: 10px;
 	}
 }
