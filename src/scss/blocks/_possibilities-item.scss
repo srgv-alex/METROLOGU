@@ -1,0 +1,38 @@
+.possibilities-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 66px;
+	@include m1280() {
+		gap: 25px;
+	}
+	@include m1024() {
+		gap: 42px;
+	}
+	@include m425() {
+		flex-direction: column;
+		gap: 17px;
+	}
+}
+.possibilities-item__content {
+}
+
+.possibilities-item__subtitle {
+	margin-bottom: 20px;
+	@include m1280() {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+	@include m1024() {
+		margin-bottom: 10px;
+	}
+}
+.possibilities-item__text {
+	line-height: 1.5;
+	@include m1280() {
+		font-size: 20px;
+	}
+	@include m1024() {
+		font-size: 16px;
+		line-height: 1.3125;
+	}
+}

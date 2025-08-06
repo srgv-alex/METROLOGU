@@ -1,0 +1,81 @@
+.possibilities {
+	padding-block: 100px 108px;
+	background-color: var(--page-secondary);
+	@include m1024() {
+		padding-block: 50px 50px;
+	}
+	@include m425() {
+		padding-block: 40px 50px;
+	}
+}
+
+.possibilities__wrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: 95px;
+	@include m1024() {
+		row-gap: 85px;
+	}
+	@include m425() {
+		row-gap: 30px;
+	}
+}
+
+.possibilities__row {
+	display: flex;
+	gap: 65px;
+	align-items: center;
+	@include m1024() {
+		flex-direction: column;
+		row-gap: 42px;
+	}
+	@include m425() {
+		row-gap: 30px;
+	}
+}
+.possibilities-content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.possibilities-title {
+	@include m1280() {
+		font-size: 35px;
+	}
+	@include m1024() {
+		font-size: 40px;
+		line-height: 1.15;
+	}
+	@include m425() {
+		font-size: 26px;
+	}
+}
+
+.possibilities__text {
+	line-height: 1.5;
+	@include m1280() {
+		font-size: 20px;
+	}
+	@include m1024() {
+		font-size: 18px;
+	}
+	@include m425() {
+		font-size: 14px;
+	}
+}
+.possibilities__img {
+	flex-shrink: 0;
+}
+.possibilities-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 54px 18px;
+	@include m1024() {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+	@include m425() {
+		gap: 44px;
+	}
+}

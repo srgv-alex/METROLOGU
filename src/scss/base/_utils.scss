@@ -15,6 +15,11 @@
 	overflow: hidden;
 }
 
+.line {
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+}
+
 .no-scroll {
 	overflow-y: hidden;
 }
