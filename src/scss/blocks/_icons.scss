@@ -14,3 +14,28 @@
 .icon--user-enter {
 	fill: #fff;
 }
+
+.svg-chart {
+	@include m1024() {
+		width: 67px;
+		height: 67px;
+	}
+}
+
+.svg-cells {
+	@include m1024() {
+		width: 58px;
+		height: 58px;
+	}
+}
+
+.svg-support-item {
+	@include m768() {
+		width: 62px;
+		height: 62px;
+	}
+	@include m425() {
+		width: 55px;
+		height: 55px;
+	}
+}
