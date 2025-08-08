@@ -1,2 +1,17 @@
 .footer {
+	padding-block: 40px 100px;
+	background-color: #000;
+	font-family: var(--font-accent);
+	@include m1024() {
+		padding-block: 40px;
+	}
+	@include m768() {
+		padding-block: 30px;
+	}
+}
+
+.footer__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
 }
